@@ -30,7 +30,8 @@ import {
   Tree,
   Select,
   Option,
-  DatePicker
+  DatePicker,
+  Upload
 } from 'element-ui'
 
 Vue.use(Button)
@@ -62,6 +63,7 @@ Vue.use(Tree)
 Vue.use(Select)
 Vue.use(Option)
 Vue.use(DatePicker)
+Vue.use(Upload)
 
 Vue.prototype.$message = Message
 Vue.prototype.$msgbox = MessageBox
