@@ -9,8 +9,10 @@ import Role from '../components/user/Roles'
 import CiType from '../components/cmdb/CiTypes'
 import Ci from '../components/cmdb/Cis'
 import Org from '../components/jumpserver/Orgs'
+import WebShell from '../components/jumpserver/WebShell'
 // 测试插槽用
 // import T1 from '../components/T1'
+// import T3 from '../components/T3'
 
 Vue.use(VueRouter)
 
@@ -28,8 +30,10 @@ const routes = [
       { path: '/users/roles', component: Role },
       { path: '/cmdb/citypes', component: CiType },
       { path: '/cmdb/cis', component: Ci },
-      { path: '/jumpserver/orgs', component: Org }
-      // { path: '/t1', component: T1 }
+      { path: '/jumpserver/orgs', component: Org },
+      { path: '/jumpserver/webshell/:id', component: WebShell }
+      // { path: '/t1', component: T1 },
+      // { path: '/t3', component: T3 }
     ]
   }
 ]
